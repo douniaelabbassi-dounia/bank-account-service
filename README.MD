@@ -27,6 +27,12 @@
 
 <h4>7. Générer et tester le documentation Swagger de des API Rest du Web service</h4>
 
+<img src="CAPTURES/swagger1.png">
+
+<img src="CAPTURES/swagger2.png">
+
+<h4>8. Exposer une API Restful en utilisant Spring Data Rest en exploitant des projections</h4>
+
 <img src="CAPTURES/Capture7.png">
 
 <h4>9. Créer les DTOs et Mappers</h4>
@@ -62,7 +68,7 @@
 <img src="CAPTURES/6.png">
 <img src="CAPTURES/7.png">
 <img src="CAPTURES/8.png">
-<img src="CAPTURES/9.png">
+
 
 
 
