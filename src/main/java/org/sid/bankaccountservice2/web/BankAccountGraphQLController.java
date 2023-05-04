@@ -1,5 +1,4 @@
 package org.sid.bankaccountservice2.web;
-
 import org.sid.bankaccountservice2.dto.BankAccountRequestDTO;
 import org.sid.bankaccountservice2.dto.BankAccountResponseDTO;
 import org.sid.bankaccountservice2.entities.BankAccount;
@@ -14,7 +13,6 @@ import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
 
 import java.util.List;
-
 @Controller
 public class BankAccountGraphQLController {
     @Autowired
@@ -23,14 +21,10 @@ public class BankAccountGraphQLController {
     private AccountService accountService ;
     @Autowired
     private CustomerRepository customerRepository;
-
-
-
     @QueryMapping
     public List<BankAccount> accountsList() {
         return bankAccountRepository.findAll();
     }
-
     @QueryMapping
     public BankAccount bankAccountById(@Argument String id) {
         return bankAccountRepository.findById(id).orElseThrow(() -> new RuntimeException(String.format("Account %s not found", id)));
@@ -43,7 +37,6 @@ public class BankAccountGraphQLController {
     public BankAccountResponseDTO updateAccount(@Argument String id ,@Argument BankAccountRequestDTO bankAccount){
         return accountService.addAccount(bankAccount);
     }
-
     @MutationMapping
     public void daleteAccount(@Argument String id){
         bankAccountRepository.deleteById(id);
@@ -52,6 +45,4 @@ public class BankAccountGraphQLController {
     public List<Customer> customers() {
         return customerRepository.findAll();
     }
-
-
 }

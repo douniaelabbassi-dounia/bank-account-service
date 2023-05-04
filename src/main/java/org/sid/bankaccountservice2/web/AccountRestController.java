@@ -7,17 +7,13 @@ import org.sid.bankaccountservice2.mappers.AccountMapper;
 import org.sid.bankaccountservice2.repositorie.BankAccountRepository;
 import org.sid.bankaccountservice2.service.AccountService;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
-
 @RestController
 @RequestMapping("/api")
 public class AccountRestController {
-
     private BankAccountRepository bankAccountRepository;
     private AccountService accountService;
     private AccountMapper accountMapper;
-
     public AccountRestController(BankAccountRepository bankAccountRepository, AccountService accountService, AccountMapper accountMapper) {
         this.bankAccountRepository = bankAccountRepository;
         this.accountService = accountService;
