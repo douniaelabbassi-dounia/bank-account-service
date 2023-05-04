@@ -15,6 +15,8 @@
 
 <img src="CAPTURES/capture4.png">
 
+<img src="CAPTURES/test.png">
+
 <h4>5. Créer le Web service Restfull qui permet de gérer des comptes</h4>
 
 <img src="CAPTURES/capture5.png">
