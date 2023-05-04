@@ -5,19 +5,19 @@
 
 <h4>2. Créer l'entité JPA Compte</h4>
 
-<img src="CAPTURES/Capture2.png">
+<img src="CAPTURES/capture2.png">
 
 <h4>3. Créer l'interface CompteRepository basée sur Spring Data</h4>
 
-<img src="CAPTURES/Capture3.png">
+<img src="CAPTURES/capture3.png">
 
 <h4>4. Tester la couche DAO</h4>
 
-<img src="CAPTURES/Capture4.png">
+<img src="CAPTURES/capture4.png">
 
 <h4>5. Créer le Web service Restfull qui permet de gérer des comptes</h4>
 
-<img src="CAPTURES/Capture5.png">
+<img src="CAPTURES/capture5.png">
 
 <h4>6. Tester le web micro-service en utilisant un client REST comme Postman</h4>
 
@@ -44,6 +44,7 @@
 
 <img src="CAPTURES/Capture12.png">
 
+<h3>I. Micro Service avec GraphQL</h3>
 
 <h4>11. Créer un Web service GraphQL pour ce micro-service :</h4>
 
